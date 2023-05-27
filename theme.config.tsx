@@ -4,12 +4,12 @@ import { DocsThemeConfig } from 'nextra-theme-docs'
 const config: DocsThemeConfig = {
   logo: <span>Devadam</span>,
   project: {
-    link: 'https://github.com/shuding/nextra-docs-template',
+    link: 'https://devadam.my.id',
   },
   chat: {
     link: 'https://discord.com',
   },
-  docsRepositoryBase: 'https://github.com/shuding/nextra-docs-template',
+  docsRepositoryBase: 'https://devadam.my.id',
   footer: {
     text: 'Nextra Docs Template',
   },
