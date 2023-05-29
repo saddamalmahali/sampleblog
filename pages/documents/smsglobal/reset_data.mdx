@@ -1,0 +1,116 @@
+# How to step Reset Data on SMSGlobal
+
+1.  Copy admin data as a query
+    ```sql 
+    INSERT INTO `smsglobal_dbs`.`mrt_member` (`id`, `username`, `password`, `password_product`, `name`, `email`, `type`, `free`, `package`, `package_join`, `sponsor`, `parent_board1`, `parent_board2`, `parent_board3`, `parent_board4`, `parent_board5`, `parent_board6`, `parent_board7`, `position_board1`, `position_board2`, `position_board3`, `position_board4`, `position_board5`, `position_board6`, `position_board7`, `tree_board1`, `tree_board2`, `tree_board3`, `tree_board4`, `tree_board5`, `tree_board6`, `tree_board7`, `board1`, `board2`, `board3`, `board4`, `board5`, `board6`, `board7`, `username_board1`, `username_board2`, `username_board3`, `username_board4`, `username_board5`, `username_board6`, `username_board7`, `current_board`, `status`, `nominal`, `uniquecode`, `address`, `province`, `city`, `district`, `village`, `idcard`, `idcard_type`, `idcard_file_name`, `idcard_file_size`, `idcard_file_ext`, `idcard_file_url`, `phone_area`, `phone`, `bank_id`, `bill`, `bill_name`, `branch`, `usdt_wallet`, `shibainu_wallet`, `city_code`, `gender`, `avatar_filename`, `avatar_url`, `avatar_extension`, `avatar_size`, `birthdate`, `last_login`, `datecreated`, `datemodified`) VALUES (1, 'admin', '6dIG2ZTx9BdEe6DYfBE7gtbrdc/HdNFBvI80sXJzcVDUNSHyoNiTom3QxdVilA0Bimu47P+Hp81AGY0XW2TxKQ==', '49eGDtxyJ75hoOJYLI31ActnvuNUk+YizbvUnTy5LDfNrGOibPuqK3rDKfy27OLq+vDsTbn71Xu4d1Ql0BHPag==', 'ADMINISTRATOR', 'administrator@mrtnet.com', 1, 1, 'platinum', 'platinum', 0, 0, 0, 0, 0, 0, 0, 0, '', '', '', '', '', '', '', '1', '1', '1', '1', '1', '1', '1', 1, 1, 1, 1, 1, 1, 1, '', '', '', '', '', '', '', 1, 1, 0, 0, '', 0, 0, '', '', '', '', '', 0, '', '', '', '', 0, '', '', '', '', '', '', 'male', '', '', '', 0, '0000-00-00', '2023-05-29 22:15:04', '2023-01-01 00:00:00', '2023-01-01 00:00:00');
+    ```
+2.  Empty Data Member
+3.  Paste in SQL Editor, and run command
+4.  Truncate table mrt_member
+    ```sql 
+    SET FOREIGN_KEY_CHECKS = 0;
+    TRUNCATE TABLE mrt_member;
+    SET FOREIGN_KEY_CHECKS = 1;
+    ```
+5.  Truncate table mrt_member_board_qualified
+    ```sql 
+    SET FOREIGN_KEY_CHECKS = 0;
+    TRUNCATE TABLE mrt_member_board_qualified;
+    SET FOREIGN_KEY_CHECKS = 1;
+    ```
+6.  Truncate table mrt_member_board1
+    ```sql 
+    SET FOREIGN_KEY_CHECKS = 0;
+    TRUNCATE TABLE mrt_member_board1;
+    SET FOREIGN_KEY_CHECKS = 1;
+    ```
+7.  Truncate table mrt_member_board2
+    ```sql 
+    SET FOREIGN_KEY_CHECKS = 0;
+    TRUNCATE TABLE mrt_member_board2;
+    SET FOREIGN_KEY_CHECKS = 1;
+    ```
+8.  Truncate table mrt_member_board3
+    ```sql 
+    SET FOREIGN_KEY_CHECKS = 0;
+    TRUNCATE TABLE mrt_member_board3;
+    SET FOREIGN_KEY_CHECKS = 1;
+    ```
+9.  Truncate table mrt_member_board4
+    ```sql 
+    SET FOREIGN_KEY_CHECKS = 0;
+    TRUNCATE TABLE mrt_member_board4;
+    SET FOREIGN_KEY_CHECKS = 1;
+    ```
+10. Truncate table mrt_member_board5
+    ```sql 
+    SET FOREIGN_KEY_CHECKS = 0;
+    TRUNCATE TABLE mrt_member_board5;
+    SET FOREIGN_KEY_CHECKS = 1;
+    ```
+11. Truncate table mrt_member_board6
+    ```sql 
+    SET FOREIGN_KEY_CHECKS = 0;
+    TRUNCATE TABLE mrt_member_board6;
+    SET FOREIGN_KEY_CHECKS = 1;
+    ```
+12. Truncate table mrt_member_board7
+    ```sql 
+    SET FOREIGN_KEY_CHECKS = 0;
+    TRUNCATE TABLE mrt_member_board7;
+    SET FOREIGN_KEY_CHECKS = 1;
+    ```
+13. Truncate table mrt_member_confirm
+    ```sql 
+    SET FOREIGN_KEY_CHECKS = 0;
+    TRUNCATE TABLE mrt_member_confirm;
+    SET FOREIGN_KEY_CHECKS = 1;
+    ```
+14. Truncate table mrt_member_sponsored
+    ```sql 
+    SET FOREIGN_KEY_CHECKS = 0;
+    TRUNCATE TABLE mrt_member_sponsored;
+    SET FOREIGN_KEY_CHECKS = 1;
+    ```
+15. Truncate table mrt_withdraw
+    ```sql 
+    SET FOREIGN_KEY_CHECKS = 0;
+    TRUNCATE TABLE mrt_withdraw;
+    SET FOREIGN_KEY_CHECKS = 1;
+    ```
+16. Truncate table mrt_bonus
+    ```sql 
+    SET FOREIGN_KEY_CHECKS = 0;
+    TRUNCATE TABLE mrt_bonus;
+    SET FOREIGN_KEY_CHECKS = 1;
+    ```
+17. Truncate table mrt_coin
+    ```sql 
+    SET FOREIGN_KEY_CHECKS = 0;
+    TRUNCATE TABLE mrt_coin;
+    SET FOREIGN_KEY_CHECKS = 1;
+    ```
+18. Truncate table mrt_coin_price_qualified
+    ```sql 
+    SET FOREIGN_KEY_CHECKS = 0;
+    TRUNCATE TABLE mrt_coin_price_qualified;
+    SET FOREIGN_KEY_CHECKS = 1;
+    ```
+19. Truncate table mrt_ewallet_in
+    ```sql 
+    SET FOREIGN_KEY_CHECKS = 0;
+    TRUNCATE TABLE mrt_ewallet_in;
+    SET FOREIGN_KEY_CHECKS = 1;
+    ```
+20. Truncate table mrt_log
+    ```sql 
+    SET FOREIGN_KEY_CHECKS = 0;
+    TRUNCATE TABLE mrt_log;
+    SET FOREIGN_KEY_CHECKS = 1;
+    ```
+21. Truncate table mrt_macro
+    ```sql 
+    SET FOREIGN_KEY_CHECKS = 0;
+    TRUNCATE TABLE mrt_macro;
+    SET FOREIGN_KEY_CHECKS = 1;
+    ```

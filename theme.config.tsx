@@ -11,7 +11,7 @@ const config: DocsThemeConfig = {
   },
   docsRepositoryBase: 'https://devadam.my.id',
   footer: {
-    text: 'Nextra Docs Template',
+    text: 'Built With Nextra Docs Template',
   },
 }
 
